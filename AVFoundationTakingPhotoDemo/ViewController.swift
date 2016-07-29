@@ -15,8 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var captureImage: UIImageView!
     @IBOutlet weak var previewView: UIView!
     
-    @IBOutlet weak var lineView: UIView!
-
     var captureSession: AVCaptureSession?
     var stillImageOutput: AVCaptureStillImageOutput?
     var previewLayer: AVCaptureVideoPreviewLayer?
@@ -75,9 +73,9 @@ class ViewController: UIViewController {
         shapeLayer.path = path.cgPath
         shapeLayer.lineWidth = 1
         shapeLayer.strokeColor = UIColor.white().cgColor
-//        shapeLayer.fillColor = UIColor.orange().cgColor
+        shapeLayer.lineDashPattern = [8]
+
         previewLayer?.addSublayer(shapeLayer)
-//        lineView.layer.addSublayer(shapeLayer)
     
     }
     
