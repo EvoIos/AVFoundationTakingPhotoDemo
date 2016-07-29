@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import CoreFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, LineGrid {
 
     @IBOutlet weak var captureImage: UIImageView!
     @IBOutlet weak var previewView: UIView!
@@ -66,11 +66,12 @@ class ViewController: UIViewController {
     func addLine() {
         let shapeLayer = CAShapeLayer()
         
-        let path = UIBezierPath()
-        path.move(to: CGPoint(x: (previewLayer?.frame.size.width)!/2.0, y: 0))
-        path.addLine(to: CGPoint(x: (previewLayer?.frame.size.width)!/2.0, y: (previewLayer?.frame.size.height)!))
+//        let path = UIBezierPath()
+//        path.move(to: CGPoint(x: (previewLayer?.frame.size.width)!/2.0, y: 0))
+//        path.addLine(to: CGPoint(x: (previewLayer?.frame.size.width)!/2.0, y: (previewLayer?.frame.size.height)!))
         
-        shapeLayer.path = path.cgPath
+//        shapeLayer.path = path.cgPath
+        shapeLayer.path = LineGrid.minddleLine(previewLayer?.frame)
         shapeLayer.lineWidth = 1
         shapeLayer.strokeColor = UIColor.white().cgColor
         shapeLayer.lineDashPattern = [8]

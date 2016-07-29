@@ -23,7 +23,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rHe-kI-RPe">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ODm-40-nt0">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ODm-40-nt0">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="JQB-KN-RA2"/>
                                             <constraint firstAttribute="width" constant="48" id="loT-51-3K3"/>
@@ -45,6 +45,8 @@
                                             <constraint firstAttribute="height" constant="35" id="GwB-6O-LWE"/>
                                             <constraint firstAttribute="width" constant="35" id="avS-xX-cfP"/>
                                         </constraints>
+                                        <state key="normal" backgroundImage="lineBG"/>
+                                        <state key="highlighted" backgroundImage="lineBG"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -63,11 +65,11 @@
                             <constraint firstItem="rHe-kI-RPe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RqA-kb-zc1"/>
                             <constraint firstItem="5RH-w8-ROO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SeN-dS-40X"/>
                             <constraint firstAttribute="trailing" secondItem="5RH-w8-ROO" secondAttribute="trailing" id="ShK-Cx-5Oy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rHe-kI-RPe" secondAttribute="bottom" id="YYq-jJ-sAm"/>
                             <constraint firstAttribute="bottom" secondItem="5RH-w8-ROO" secondAttribute="bottom" constant="115" id="ami-0P-7ux"/>
                             <constraint firstAttribute="trailing" secondItem="rHe-kI-RPe" secondAttribute="trailing" id="bAg-EZ-MGD"/>
                             <constraint firstItem="5RH-w8-ROO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="52" id="fTp-gV-MLS"/>
                             <constraint firstItem="rHe-kI-RPe" firstAttribute="top" secondItem="5RH-w8-ROO" secondAttribute="bottom" id="pPB-hh-tuP"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rHe-kI-RPe" secondAttribute="bottom" id="uO8-Ke-DUm"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -79,10 +81,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="122.78860569715144"/>
+            <point key="canvasLocation" x="98" y="-142"/>
         </scene>
     </scenes>
     <resources>
+        <image name="lineBG" width="36" height="35"/>
         <image name="photoBtnBG" width="72" height="72"/>
         <image name="photoBtnFG" width="58" height="58"/>
     </resources>
