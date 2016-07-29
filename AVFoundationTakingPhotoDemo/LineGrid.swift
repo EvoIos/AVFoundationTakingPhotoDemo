@@ -11,7 +11,8 @@ import UIKit
 
 protocol LineGrid {  }
 
-extension LineGrid where Self: CALayer{
+//where Self: CALayer
+extension LineGrid {
     func minddleLine(frame: CGRect) -> CGPath{
         
         let path = UIBezierPath()

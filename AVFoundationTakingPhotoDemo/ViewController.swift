@@ -59,30 +59,22 @@ class ViewController: UIViewController, LineGrid {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         previewLayer!.frame = previewView.bounds
-        addLine()
         
+        let path = self.minddleLine(frame: (previewLayer?.frame)!)
+        addLayerToCurrentLayer(path: path)
     }
     
-    func addLine() {
-        let shapeLayer = LineLayer()
-        
-//        let path = UIBezierPath()
-//        path.move(to: CGPoint(x: (previewLayer?.frame.size.width)!/2.0, y: 0))
-//        path.addLine(to: CGPoint(x: (previewLayer?.frame.size.width)!/2.0, y: (previewLayer?.frame.size.height)!))
-        
-//        shapeLayer.path = path.cgPath
-        let path = shapeLayer.minddleLine(frame: (previewLayer?.frame)!)
-        
+    
+    func addLayerToCurrentLayer(path: CGPath) {
+        let shapeLayer = CAShapeLayer()
         shapeLayer.path = path
         shapeLayer.lineWidth = 1
         shapeLayer.strokeColor = UIColor.white().cgColor
         shapeLayer.lineDashPattern = [8]
-
         previewLayer?.addSublayer(shapeLayer)
-    
+        
+        
     }
-    
-    
     
     
     @IBAction func didPressTakePhoto(_ sender: AnyObject) {
