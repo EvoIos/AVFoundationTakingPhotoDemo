@@ -64,14 +64,16 @@ class ViewController: UIViewController, LineGrid {
     }
     
     func addLine() {
-        let shapeLayer = CAShapeLayer()
+        let shapeLayer = LineLayer()
         
 //        let path = UIBezierPath()
 //        path.move(to: CGPoint(x: (previewLayer?.frame.size.width)!/2.0, y: 0))
 //        path.addLine(to: CGPoint(x: (previewLayer?.frame.size.width)!/2.0, y: (previewLayer?.frame.size.height)!))
         
 //        shapeLayer.path = path.cgPath
-        shapeLayer.path = LineGrid.minddleLine(previewLayer?.frame)
+        let path = shapeLayer.minddleLine(frame: (previewLayer?.frame)!)
+        
+        shapeLayer.path = path
         shapeLayer.lineWidth = 1
         shapeLayer.strokeColor = UIColor.white().cgColor
         shapeLayer.lineDashPattern = [8]

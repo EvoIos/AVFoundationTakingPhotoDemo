@@ -13,6 +13,7 @@
 		1951E8791D4AF13700D67247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1951E8781D4AF13700D67247 /* Assets.xcassets */; };
 		1951E87C1D4AF13700D67247 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1951E87A1D4AF13700D67247 /* LaunchScreen.storyboard */; };
 		19BD34F11D4B5899007BE0C2 /* LineGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BD34F01D4B5899007BE0C2 /* LineGrid.swift */; };
+		19BD34F51D4B5F6F007BE0C2 /* LineLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BD34F41D4B5F6F007BE0C2 /* LineLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1951E87B1D4AF13700D67247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1951E87D1D4AF13700D67247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19BD34F01D4B5899007BE0C2 /* LineGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineGrid.swift; sourceTree = "<group>"; };
+		19BD34F41D4B5F6F007BE0C2 /* LineLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				1951E8711D4AF13700D67247 /* AppDelegate.swift */,
 				1951E8731D4AF13700D67247 /* ViewController.swift */,
+				19BD34F41D4B5F6F007BE0C2 /* LineLayer.swift */,
 				19BD34F01D4B5899007BE0C2 /* LineGrid.swift */,
 				1951E8751D4AF13700D67247 /* Main.storyboard */,
 				1951E8781D4AF13700D67247 /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19BD34F51D4B5F6F007BE0C2 /* LineLayer.swift in Sources */,
 				19BD34F11D4B5899007BE0C2 /* LineGrid.swift in Sources */,
 				1951E8741D4AF13700D67247 /* ViewController.swift in Sources */,
 				1951E8721D4AF13700D67247 /* AppDelegate.swift in Sources */,

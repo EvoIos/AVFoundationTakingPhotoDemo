@@ -9,12 +9,9 @@
 import Foundation
 import UIKit
 
-protocol LineGrid {
-    func minddleLine() -> CGPath
-    
-}
+protocol LineGrid {  }
 
-extension LineGrid {
+extension LineGrid where Self: CALayer{
     func minddleLine(frame: CGRect) -> CGPath{
         
         let path = UIBezierPath()
