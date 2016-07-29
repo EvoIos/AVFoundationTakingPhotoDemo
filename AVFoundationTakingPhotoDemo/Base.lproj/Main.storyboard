@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AVFoundationTakingPhotoDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5RH-w8-ROO">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rHe-kI-RPe">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ODm-40-nt0">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="JQB-KN-RA2"/>
+                                            <constraint firstAttribute="width" constant="45" id="loT-51-3K3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zi-WD-w9t">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="72" id="FPE-AK-64U"/>
+                                            <constraint firstAttribute="height" constant="72" id="hrI-ef-R3s"/>
+                                        </constraints>
+                                        <state key="normal" title="takePhoto"/>
+                                        <connections>
+                                            <action selector="didPressTakePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XyT-5k-vCb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="3zi-WD-w9t" firstAttribute="centerY" secondItem="rHe-kI-RPe" secondAttribute="centerY" id="5Ty-vh-XV0"/>
+                                    <constraint firstItem="ODm-40-nt0" firstAttribute="centerY" secondItem="rHe-kI-RPe" secondAttribute="centerY" id="Gjm-Bj-jjj"/>
+                                    <constraint firstItem="3zi-WD-w9t" firstAttribute="centerX" secondItem="rHe-kI-RPe" secondAttribute="centerX" id="I0D-X4-1zB"/>
+                                    <constraint firstItem="ODm-40-nt0" firstAttribute="leading" secondItem="rHe-kI-RPe" secondAttribute="leading" constant="8" id="yz0-tt-cp6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rHe-kI-RPe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RqA-kb-zc1"/>
+                            <constraint firstItem="5RH-w8-ROO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SeN-dS-40X"/>
+                            <constraint firstAttribute="trailing" secondItem="5RH-w8-ROO" secondAttribute="trailing" id="ShK-Cx-5Oy"/>
+                            <constraint firstAttribute="bottom" secondItem="5RH-w8-ROO" secondAttribute="bottom" constant="115" id="ami-0P-7ux"/>
+                            <constraint firstAttribute="trailing" secondItem="rHe-kI-RPe" secondAttribute="trailing" id="bAg-EZ-MGD"/>
+                            <constraint firstItem="5RH-w8-ROO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="52" id="fTp-gV-MLS"/>
+                            <constraint firstItem="rHe-kI-RPe" firstAttribute="top" secondItem="5RH-w8-ROO" secondAttribute="bottom" id="pPB-hh-tuP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rHe-kI-RPe" secondAttribute="bottom" id="uO8-Ke-DUm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="captureImage" destination="ODm-40-nt0" id="OSZ-UZ-tLN"/>
+                        <outlet property="previewView" destination="5RH-w8-ROO" id="AcR-r0-imL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
