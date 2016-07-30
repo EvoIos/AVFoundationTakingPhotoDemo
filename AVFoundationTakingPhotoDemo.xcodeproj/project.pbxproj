@@ -99,8 +99,8 @@
 				TargetAttributes = {
 					1951E86D1D4AF13700D67247 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = MDPY78J7Z5;
-						DevelopmentTeamName = "Qi Yanfeng";
+						DevelopmentTeam = T2V479XL89;
+						DevelopmentTeamName = "lanchun zheng (Personal Team)";
 						ProvisioningStyle = Automatic;
 					};
 				};

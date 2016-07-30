@@ -55,6 +55,7 @@
                                     <constraint firstItem="3zi-WD-w9t" firstAttribute="centerY" secondItem="rHe-kI-RPe" secondAttribute="centerY" id="5Ty-vh-XV0"/>
                                     <constraint firstItem="ODm-40-nt0" firstAttribute="centerY" secondItem="rHe-kI-RPe" secondAttribute="centerY" id="Gjm-Bj-jjj"/>
                                     <constraint firstItem="3zi-WD-w9t" firstAttribute="centerX" secondItem="rHe-kI-RPe" secondAttribute="centerX" id="I0D-X4-1zB"/>
+                                    <constraint firstAttribute="height" constant="115" id="aAf-Iv-KkS"/>
                                     <constraint firstItem="s2f-Ws-H3p" firstAttribute="centerY" secondItem="rHe-kI-RPe" secondAttribute="centerY" id="odc-dC-Q3H"/>
                                     <constraint firstItem="ODm-40-nt0" firstAttribute="leading" secondItem="rHe-kI-RPe" secondAttribute="leading" constant="12" id="yz0-tt-cp6"/>
                                 </constraints>
@@ -62,14 +63,13 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="rHe-kI-RPe" firstAttribute="top" secondItem="5RH-w8-ROO" secondAttribute="bottom" id="D9F-Al-F3Z"/>
                             <constraint firstItem="rHe-kI-RPe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RqA-kb-zc1"/>
                             <constraint firstItem="5RH-w8-ROO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SeN-dS-40X"/>
                             <constraint firstAttribute="trailing" secondItem="5RH-w8-ROO" secondAttribute="trailing" id="ShK-Cx-5Oy"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rHe-kI-RPe" secondAttribute="bottom" id="YYq-jJ-sAm"/>
-                            <constraint firstAttribute="bottom" secondItem="5RH-w8-ROO" secondAttribute="bottom" constant="115" id="ami-0P-7ux"/>
                             <constraint firstAttribute="trailing" secondItem="rHe-kI-RPe" secondAttribute="trailing" id="bAg-EZ-MGD"/>
                             <constraint firstItem="5RH-w8-ROO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="52" id="fTp-gV-MLS"/>
-                            <constraint firstItem="rHe-kI-RPe" firstAttribute="top" secondItem="5RH-w8-ROO" secondAttribute="bottom" id="pPB-hh-tuP"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -81,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="98" y="-142"/>
+            <point key="canvasLocation" x="96.799999999999997" y="-142.57871064467767"/>
         </scene>
     </scenes>
     <resources>
